@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     display: flex;
-    background: linear-gradient(180deg, #f7214f 0, #c00d34 100%);
+    background: linear-gradient(180deg, #f4f0f1 0, #e3dfe0 100%);
     color: white;
     text-align: center;
     align-items: center;
@@ -9,6 +9,10 @@ body {
 }
 .wrapper{
     text-align: center;
+}
+
+.header{
+    background-color: black;
 }
 
 a{
