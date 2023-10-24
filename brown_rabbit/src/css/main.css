@@ -14,17 +14,21 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 1.5;
+    background-color: rgb(229, 225, 225);
+    /*
     background: linear-gradient(180deg, #f4f0f1 0, #e3dfe0 100%);
+    */
     color: white;
     text-align: center;
 }
 
+/* Header and navigation bar is styled hereafter*/
 .header{
     background-color: black;
     color: white;
     width: 100%;
     margin: 0px;
-    padding: 20px 30px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -33,7 +37,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-
 }
 
 .nav_content div {
@@ -47,6 +50,19 @@ header ul {
     gap: 15px;
     margin-top: 20px;
     font-size: 10px;
+}
+
+/* Carousel styling*/
+
+.carouselContainer,
+.container {
+    background: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 20%,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 255, 255) 100%
+      );
 }
 
 /* Footer styling from her*/
