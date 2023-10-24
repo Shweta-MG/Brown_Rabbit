@@ -132,12 +132,16 @@ h4 {
 .lineBreak {    
     width: 90%;
     height: 12px;
-    margin: 50px auto;
+    margin: 50px auto 0px auto;
 }
 
 .sponsorContainer {
     font-family: 'Times New Roman', Times, serif;
-    padding: 40px 40px;
+    padding: 0px 30px 30px 30px;
+}
+.sponsorContainer h2{
+    padding: 20px 0px;
+
 }
 
 .sponsorContainer img {
