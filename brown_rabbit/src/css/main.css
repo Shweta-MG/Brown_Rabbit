@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -27,7 +28,6 @@ body {
     margin: 0px;
     padding: 20px 60px;
     display: flex;
-    justify-content: space-between;
 }
 
 .logo {
@@ -35,8 +35,27 @@ body {
     display: flex;
     justify-content: flex-start;
 }
+.navContent{
+    width: 100%;
+}
 
-.nav_content div {
+.navContent div ul .searchBar hr {
+    margin: 5px;
+    width: 110%;
+}
+
+.navContent div ul .searchBar img {
+    width: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+.navContent div ul .searchBar input {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    
+}
+
+.navContent div {
     display: flex;
     justify-content: flex-end;
 }
@@ -45,8 +64,12 @@ header ul {
     list-style: none;
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 10px;
+}
+
+header ul li {
+    margin: 0px 10px 0px 10px;
 }
 
 /* Carousel styling*/
@@ -127,7 +150,7 @@ h4 {
 }
 
 
-/**/
+/*Sponsor logos*/
 
 .lineBreak {    
     width: 90%;
@@ -139,6 +162,7 @@ h4 {
     font-family: 'Times New Roman', Times, serif;
     padding: 0px 30px 30px 30px;
 }
+
 .sponsorContainer h2{
     padding: 20px 0px;
 
@@ -147,4 +171,108 @@ h4 {
 .sponsorContainer img {
     width: 80px;
     margin: 15px 15px;
+}
+
+/* Articles, images and otehr details */
+.second-container {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.posts {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.item img {
+    width: 240px;
+    height: 240px;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information {
+    flex: 1;
+    line-height: 2;
+}
+
+.information ul {
+    list-style: none;
+}
+
+.information hr {
+    width: 75%;
+}
+
+address {
+    font-style: normal;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+
+/* General styles */
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+time {
+    font-size: 15px;
+    color: #707070;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-width: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #DDDDDD;
+    opacity: 0.9;
+    margin: 10px 0;
+}
+
+
+.second-item {
+    flex: 1;
 }
