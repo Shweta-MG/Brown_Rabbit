@@ -48,3 +48,67 @@ header ul {
     margin-top: 20px;
     font-size: 10px;
 }
+
+/* Footer styling from her*/
+#footerWrapper {
+    background-color: #000000;
+    text-align: left;
+}
+
+#footerContainer {
+    width: 85%;
+    margin: auto;
+    color: white;
+}
+
+.footerContainer1 {
+    padding: 100px 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerWrapper hr {
+    color: #DDDDDD;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.footerLinks img {
+    width: 20px;
+    color: #707070;
+}
+
+.footerContainer2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.footerContainer2 div {
+    width: 30%;
+}
+
+.footerContainer2 ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footerContainer2 img {
+    width: 80%;
+    height: 80%;
+}
+
+.footerContainer2 address,
+.footerContainer2 h4 {
+    color: #707070;
+    font-size: 16px;
+}
+
+.footerContainer2 h3,
+h4 {
+    margin-bottom: 10px;
+}
