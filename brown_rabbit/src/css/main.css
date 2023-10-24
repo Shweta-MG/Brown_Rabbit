@@ -14,10 +14,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: rgb(229, 225, 225);
-    /*
-    background: linear-gradient(180deg, #f4f0f1 0, #e3dfe0 100%);
-    */
+    background-color: rgb(255, 255, 255);
     color: white;
     text-align: center;
 }
@@ -127,4 +124,23 @@ header ul {
 .footerContainer2 h3,
 h4 {
     margin-bottom: 10px;
+}
+
+
+/**/
+
+.lineBreak {    
+    width: 90%;
+    height: 12px;
+    margin: 50px auto;
+}
+
+.sponsorContainer {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 40px 40px;
+}
+
+.sponsorContainer img {
+    width: 80px;
+    margin: 15px 15px;
 }

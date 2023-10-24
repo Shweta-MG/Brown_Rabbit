@@ -1,14 +1,14 @@
-window.onload = function () {
+const logoList = document.querySelector('#logos');
 
-    var el = document.createElement("div");
-    el.innerHTML = "RABBIT TEST ";
-    var div = document.getElementById("headline");
-    insertAfter(div, el);
+function loadSponsorImages() {
+    logos.forEach((logo) => {
+        const logoImage = document.createElement('img');
+        logoImage.src = logo.url;
+        logoImage.alt = logo.altText;
+        logoList.appendChild(logoImage);
+    });
+}
 
-    /* FUNCTIONS */
-
-    // Inserts newNode after referenceNode
-    function insertAfter(referenceNode, newNode) {
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-    }
-};
+window.addEventListener('load', function () {
+    loadSponsorImages();
+});
