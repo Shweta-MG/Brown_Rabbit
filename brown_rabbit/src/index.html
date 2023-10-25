@@ -4,17 +4,216 @@
         <meta charset="UTF-8">
         <title>Brown rabbit test</title>
         <link rel="stylesheet" href="css/main.css" type="text/css" >
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     </head>
     <body>
         <div class="wrapper">
-            <img src="assets/twentyfour-logo.svg" alt="Twentyfour!"/>
-            <h1 id="headline">
-                THE BROWN
-            </h1>
-            <a target="_blank" href="../readme.md">Project description</a>
-            <span> · </span>
-            <a target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> See design</a>
+<!-- Header -->
+            <header class="header">
+                <div class="logo">
+                    <img src="assets/logo-white.png" alt="Logo" id="logo" width="350px" height="40px"/>
+                </div>
+                <div class="navContent">
+                    <div>
+                        <ul>
+                            <li class="searchBar">
+                                <img src="assets/icons/search.svg" alt="search icon"> 
+                                <input type="search" id="searchInput" placeholder="search" onkeydown="searchArticle()">  
+                                <hr class="searchBarRule">
+                            </li>
+                            <li><img src="assets/icons/linkedin-white.svg" alt="LinkedIn icon"></li>
+                            <li><img src="assets/icons/twitter-white.svg" alt="Twitter icon"></li>
+                            <li><img src="assets/icons/instagram-white.svg" alt="Instagram icon"></li>
+                            <li><img src="assets/icons/facebook-white.svg" alt="Facebook icon"></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>About us</li>
+                            <li>Events</li>
+                            <li>Nordic roaster</li>
+                            <li>Results</li>
+                            <li>Links</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+<!-- Carousel images and texts -->
+                <div class="carouselContainer">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <img src="assets/images/coffee/coffee_1.jpg" alt="coffee_1" style="width:100%; ">
+                            </div>
+                      
+                            <div class="item">
+                              <img src="assets/images/coffee/coffee_2.jpg" alt="coffee_2" style="width:100%; ">
+                            </div>
+                          
+                            <div class="item">
+                              <img src="assets/images/coffee/coffee_3.jpg" alt="coffee_3" style="width:100%; ">
+                            </div>
+    
+                            <div class="item">
+                                <img src="assets/images/coffee/coffee_4.jpg" alt="coffee_4" style="width:100%;">
+                              </div>
+                            </div>
+                      
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+<!--Articles, images and desscriptions -->
+
+                <div class="second-container">
+                    <div>
+        
+                    </div>
+                    <div class="posts">
+        
+                    </div>
+        
+                    <div class="information">
+                        <div>
+                            <h2>WBC Shop</h2>
+                            <p>Your shopping cart is empty</p>
+                            <button>Visit the shop</button>
+                        </div>
+        
+                        <hr>
+        
+                        <div>
+                            <h2>Next event</h2>
+                            <h3>World Barista Cup 2021</h3>
+                            <address>
+                                Copenhagen, Denmark <br>
+                                Dates: 25th - 27th August 2011 <br>
+                                Theme: SENSORY
+                            </address>
+                        </div>
+        
+                        <hr>
+        
+                        <div>
+                            <h2>Scoreboard</h2>
+                            <h3>List of winners from last year</h3>
+                            <ul>
+                                <li>2021 - ?</li>
+                                <li>2020 - Denmark</li>
+                                <li>2021 - Sweden</li>
+                                <li>2021 - Turkey</li>
+                                <li>2021 - Italy</li>
+                                <li>2021 - Italy</li>
+                                <li>2021 - Germany</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+        
+
+<!-- Sponsors logo -->
+                <hr class="lineBreak">
+                <div class="sponsorContainer">
+                    <h2>Nordic Barista Cup Sponsors</h2>
+                    <div id="logos">            
+                    </div>
+                </main>
+                </div>
+                  
+            
+            </main>
+
+<!-- Footer -->
+            <footer id="footerWrapper">
+                <div id="footerContainer">
+                    <div class="footerContainer1">
+                        <div>
+                            <img src="assets/logo-white.png" alt="Logo" id="logo" />
+                        </div>
+                        <div class="footerLinks">
+                            <a href="#"><img src="./assets/icons/linkedin-white.svg" alt="LinkedIn"></a>
+                            <a href="#"><img src="./assets/icons/twitter-white.svg" alt="Tweeter"></a>
+                            <a href="#"><img src="./assets/icons/instagram-white.svg" alt="Instagram"></a>
+                            <a href="#"><img src="./assets/icons/facebook-white.svg" alt="Facebook"></a>
+                        </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="footerContainer2">
+                        <div>
+                            <h3>About World Barista Cup</h3>
+        
+                            <h4>The vision within The World Barista Cup</h4>
+        
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos exercitationem iusto possimus pariatur est repellat nulla excepturi et error. Quam molestiae assumenda earum laboriosam autem eos tempore porro esse tempora.</p>
+                        </div>
+        
+                        <div>
+                            <h3>Instagram feed</h3>
+                            <ul>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-9.png" alt="Hot coffee cup"></li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-1.png" alt="Coffee mug"></li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-2.png" alt="Coffee banner"></li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-3.png" alt="Lady drinking coffee">
+                                </li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-4.png" alt="A hand poured coffee">
+                                </li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-5.png" alt="Coffee cups"></li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-6.png" alt="Milk added in coffee">
+                                </li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-7.png" alt="Breewing coffee"></li>
+                                <li><img src="./assets/images/instagram-feed/instagram-image-8.png" alt="Coffee mug and cup">
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div>
+                            <h3>Contact</h3>
+                            <span>World Barista Cup</span>
+                            <address>
+                                Amagertorv 13 <br>
+                                1160 Copenhagen K <br>
+                                +45 33 12 04 28 <br>
+                                CVR: 11427693 <br>
+                                Email: info@worldbaristacup.com
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
+
+        <script src="js/dataArticles.js"></script>
+        <script src="js/dataSponsorsLogo.js"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
     </body>
 </html>

@@ -1,18 +1,321 @@
-body {
-    height: 100vh;
-    display: flex;
-    background: linear-gradient(180deg, #f7214f 0, #c00d34 100%);
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.wrapper{
-    text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-a{
+body {
+    width: 100%;
+    margin: 0px auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
     color: white;
-    margin-top: 15px;
-    display: inline-block;
+    text-align: left;
+}
+
+/* Header and navigation bar is styled hereafter*/
+.header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 60px;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navContent{
+    width: 100%;
+}
+
+.navContent div ul .searchBar hr {
+    margin: 5px;
+    width: 110%;
+}
+
+.navContent div ul .searchBar img {
+    width: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+.navContent div ul .searchBar input {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    
+}
+
+.navContent div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+header ul li {
+    margin: 0px 10px 0px 10px;
+}
+
+/* Carousel styling*/
+
+.carouselContainer,
+.container {
+    background: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 20%,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 255, 255) 100%
+      );
+}
+
+/* Footer styling from her*/
+#footerWrapper {
+    background-color: #000000;
+}
+
+#footerContainer {
+    width: 85%;
+    margin: auto;
+    color: white;
+}
+
+.footerContainer1 {
+    padding: 100px 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerWrapper hr {
+    color: #DDDDDD;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.footerLinks img {
+    width: 20px;
+    color: #707070;
+}
+
+.footerContainer2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.footerContainer2 div {
+    width: 30%;
+}
+
+.footerContainer2 ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footerContainer2 img {
+    width: 80%;
+    height: 80%;
+}
+
+.footerContainer2 address,
+.footerContainer2 h4 {
+    color: #707070;
+    font-size: 16px;
+}
+
+.footerContainer2 h3,
+h4 {
+    margin-bottom: 10px;
+}
+
+
+/*Sponsor logos*/
+
+.lineBreak {    
+    width: 90%;
+    height: 12px;
+    margin: 50px auto 0px auto;
+}
+
+.sponsorContainer {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 30px 30px 30px;
+}
+
+.sponsorContainer h2{
+    padding: 20px 0px;
+    text-align: center;
+
+}
+
+.sponsorContainer img {
+    width: 80px;
+    margin: 15px 15px;
+}
+
+/* Articles, images and otehr details */
+.second-container {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.posts {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.item img {
+    width: 240px;
+    height: 240px;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information {
+    flex: 1;
+    line-height: 2;
+}
+
+.information ul {
+    list-style: none;
+}
+
+.information hr {
+    width: 75%;
+}
+
+address {
+    font-style: normal;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+
+/* General styles */
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+time {
+    font-size: 15px;
+    color: #707070;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-width: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #DDDDDD;
+    opacity: 0.9;
+    margin: 10px 0;
+}
+
+
+.second-item {
+    flex: 1;
+}
+
+
+
+/*Popup Article*/
+
+.popup {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    background-color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.popUpDescription {
+    padding: 30px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.popUpDescription p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.openPopUp {
+    visibility: visible;
+}
+
+.closePopUp {
+    visibility: hidden;
 }
