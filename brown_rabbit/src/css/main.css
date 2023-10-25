@@ -275,3 +275,47 @@ hr {
 .second-item {
     flex: 1;
 }
+
+
+
+/*Popup Article*/
+
+.popup {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    background-color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.popUpDescription {
+    padding: 30px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.popUpDescription p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.openPopUp {
+    visibility: visible;
+}
+
+.closePopUp {
+    visibility: hidden;
+}
