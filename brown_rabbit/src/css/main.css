@@ -17,7 +17,7 @@ body {
     line-height: 1.5;
     background-color: rgb(255, 255, 255);
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 /* Header and navigation bar is styled hereafter*/
@@ -35,6 +35,7 @@ body {
     display: flex;
     justify-content: flex-start;
 }
+
 .navContent{
     width: 100%;
 }
@@ -88,7 +89,6 @@ header ul li {
 /* Footer styling from her*/
 #footerWrapper {
     background-color: #000000;
-    text-align: left;
 }
 
 #footerContainer {
@@ -165,6 +165,7 @@ h4 {
 
 .sponsorContainer h2{
     padding: 20px 0px;
+    text-align: center;
 
 }
 
@@ -187,8 +188,6 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    text-align: left;
-
 }
 
 .item {

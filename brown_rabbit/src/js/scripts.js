@@ -3,9 +3,9 @@ const logoList = document.querySelector('#logos');
 
 // Articles with images and description
 
-function loadCoffeeItems() {
+const loadCoffeeItems = () => {
     coffeeItems.forEach((item) => {
-        const coffeeItem = document.createElement('a');
+        const coffeeItem = document.createElement('div');
        // coffeeItem.href = '#';
         coffeeItem.className = 'item';
 
@@ -13,7 +13,7 @@ function loadCoffeeItems() {
             <div>
                 <img src="${item.imageSrc}" alt="${item.altText}">
             </div>
-            <div id="item-desc">
+            <div class="item-desc">
                 <h2>${item.title}</h2>
                 <time datetime="2021-12-07">Published <span>12/07/2021</span></time>
                 <p>${item.desc}</p>
@@ -25,6 +25,34 @@ function loadCoffeeItems() {
         coffeeContainer.appendChild(coffeeItem);
     });
 };
+
+
+//Search coffee articles
+
+const searchArticle = () => {
+    const searchBarInput = document.querySelector('#searchInput').value.toLowerCase();
+    const searchedItems = document.querySelectorAll('.item')
+    //const searchedItemsTitles = coffeeContainer.getElementsByTagName('h2');
+    const searchedItemsTitles = coffeeContainer.getElementsByTagName('h2');
+    console.log(searchBarInput)
+    //console.log(searchedItems)
+
+    for (i = 0; i < searchedItemsTitles.length; i++){
+        let matchIArticle = searchedItems[i].getElementsByTagName('h2')[0];
+
+        if (matchIArticle) {
+            let searchValue = matchIArticle.textContent || matchIArticle.innerHTML;
+
+            if (searchValue.toLowerCase().indexOf(searchBarInput) > -1) {
+                searchedItems[i].style.display = "";
+            } else {
+                searchedItems[i].style.display = "none";
+            }
+        }
+    }
+}
+
+
 
 
 // Sponsors logos 

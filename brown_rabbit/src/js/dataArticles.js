@@ -78,19 +78,19 @@ const coffeeItems = [
         altText: 'Coffee cups'
     },
     {
-        title: 'The most expensive coffee on the European market',
+        title: 'The most expensive coffee on the African market',
         imageSrc: '../src/assets/images/posts/coffee-14.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...',
         altText: 'A hand holding hot coffee cup'
     },
     {
-        title: '10 type of Indian coffee beans you need to know',
+        title: '10 type of African coffee beans you need to know',
         imageSrc: '../src/assets/images/posts/coffee-15.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...',
         altText: 'Coffee beans'
     },
     {
-        title: 'Challenge your barista skills to the max in India',
+        title: 'Challenge your barista skills to the max in Africa',
         imageSrc: '../src/assets/images/posts/coffee-16.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...',
         altText: 'Coffee mugs'
